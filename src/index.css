@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+
+.D9WLyEQaARfWqCTyVrpU {
+    display: flex;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    width: 960px;
+    height: 530px;
+    padding: 10px 0 10px 10px;
+    border: none !important;
+    border-radius: 20px;
+    box-shadow: none !important;
+}
+
+.pOvRwHj19chJGkgemUH3 ._M8cCug8H18ALQ05cNMt {
+    color: #000000 !important;
+}
+
+@media only screen and(max-width: 431px) {
+    .D9WLyEQaARfWqCTyVrpU {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
