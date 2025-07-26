@@ -40,8 +40,8 @@ const Meet = () => {
                 },
                 sharedLinks: [
                     {
-                        name: 'Shared Meeting Link',
-                        url: window.location.href,
+                        name: 'Shared Meeting ID',
+                        url: meetId,
                     },
                 ],
             });
