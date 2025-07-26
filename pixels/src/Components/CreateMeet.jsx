@@ -76,16 +76,14 @@ const CreateMeet = () => {
 
         <>  
 
-            <div>
-                <div className='w-full flex justify-between items-center fixed top-0 left-0 z-50 px-20 py-3'>
-                    <p className='text-3xl font-bold text-blue-950 hover:scale-105 hover:transition-all hover:duration-300'>Pixels</p>
-                    <button
-                        onClick={handleCreateMeet}
-                        className="text-xs bg-blue-900 hover:bg-blue-800 text-white px-4 py-3 rounded-4xl shadow-lg font-medium flex items-center my-5 gap-2"
-                    > 
-                        <MdPhotoCameraFront size={20} /> New Meeting
-                    </button>
-                </div>
+            <div className='w-full flex justify-between items-center fixed top-0 left-0 z-50 px-5 sm:px-20 py-3'>
+                <p className='text-3xl font-bold text-blue-950 hover:scale-105 hover:transition-all hover:duration-300'>Pixels</p>
+                <button
+                    onClick={handleCreateMeet}
+                    className="text-xs bg-blue-900 hover:bg-blue-800 text-white px-4 py-3 rounded-4xl shadow-lg font-medium flex items-center my-5 gap-2"
+                > 
+                    <MdPhotoCameraFront size={20} /> New Meeting
+                </button>
             </div>
 
             <div
@@ -97,14 +95,13 @@ const CreateMeet = () => {
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6">
+                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 pt-20 sm:pt-0">
 
-                    <div className='w-full grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 md:grid-cols-1 items-center gap-5 px-25'>
-
+                    <div className='w-full grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 items-center gap-8 px-6 md:px-12 lg:px-20'>
                         {/* Create Meeting */}
-                        <div>
+                        <div className='w-full items-center justify-center'>
 
-                            <div className='w-full md:w-[70%]'>
+                            <div className='w-full md:w-[90%] lg:w-[80%] xl:w-[70%]'>
                                 <h1 className='text-[40px] leading-none py-3'>
                                     Hassle-free video conferencing, anytime.
                                 </h1>
@@ -113,7 +110,7 @@ const CreateMeet = () => {
                                 </p>
                             </div>
 
-                            <div className='w-full lg:flex items-center py-3 gap-4'>
+                            <div className='w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-4'>
 
                                 {/* Create Meeting */}
                                 <button
@@ -124,7 +121,7 @@ const CreateMeet = () => {
                                 </button>
 
                                 {/* Join meeting */}
-                                <form onSubmit={handleJoinSubmit} className="w-full rounded-2xl flex">
+                                <form onSubmit={handleJoinSubmit} className="w-full sm:w-[80%] rounded-2xl flex">
 
                                     <div className='w-full rounded-xl outline-1 outline-gray-500 hover:outline-2 hover:outline-blue-800 hover:text-blue-800 flex items-center px-4 py-3 gap-2'>
 
@@ -168,7 +165,7 @@ const CreateMeet = () => {
                                     1024: { slidesPerView: 1 },
                                     1199: { slidesPerView: 1 },
                                 }}
-                                className='w-[65%]'
+                                className='w-full md:w-[80%] lg:w-[65%] mx-auto'
                             >
                                 {slides.map((slides) => (
                                     <SwiperSlide key={slides.id}>
