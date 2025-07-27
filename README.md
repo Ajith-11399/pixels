@@ -41,11 +41,15 @@ pixels/
 ├── public/
 ├── src/
 │   ├── components/
-│   ├── pages/
-│   ├── assets/
-│   └── App.jsx
-├── .env
+│   ├── asstes/
+│   ├── App.jsx
+│   └── index.css
+│   ├── Main.jsx
 ├── .gitignore
+├── eslint.config.js
+├── index.html
 ├── tailwind.config.js
+├── package-lock.json
 ├── package.json
-└── README.md
+├── vite.config.js
+├── README.md
