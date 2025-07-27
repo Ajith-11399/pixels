@@ -67,9 +67,10 @@ const Meet = () => {
                 height: '100vh',
             }}
         >
-            <div className="w-full h-screen flex items-center justify-center">
+            {/* <div className="w-full h-screen flex items-center justify-center">
                 <div className="size-full shadow-lg" ref={meetingRef}></div>
-            </div>
+            </div> */}
+            <div className="w-full h-full max-w-[960px] mx-auto" ref={meetingRef}></div>
         </div>
 
     );

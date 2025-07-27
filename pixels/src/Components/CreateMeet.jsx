@@ -80,14 +80,14 @@ const CreateMeet = () => {
                 <p className='text-3xl font-bold text-blue-950 hover:scale-105 hover:transition-all hover:duration-300'>Pixels</p>
                 <button
                     onClick={handleCreateMeet}
-                    className="text-xs bg-blue-900 hover:bg-blue-800 text-white px-4 py-3 rounded-4xl shadow-lg font-medium flex items-center my-5 gap-2"
+                    className="hidden text-xs bg-blue-900 hover:bg-blue-800 text-white px-4 py-3 rounded-4xl shadow-lg font-medium md:flex items-center my-5 gap-2"
                 > 
                     <MdPhotoCameraFront size={20} /> New Meeting
                 </button>
             </div>
 
             <div
-                className="w-screen h-screen bg-black p-4 relative"
+                className="w-screen h-screen bg-black p-4 relative pt-[10%]"
                 style={{
                     backgroundImage: `url(${meetBg})`,
                     backgroundSize: 'cover',
@@ -95,10 +95,10 @@ const CreateMeet = () => {
                     backgroundRepeat: 'no-repeat',
                 }}
             >
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 pt-20 sm:pt-0">
+                <div className="absolute sm:inset-0 flex flex-col items-center justify-center gap-6 pt-20 sm:pt-0">
 
                     <div className='w-full grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-1 items-center gap-8 px-6 md:px-12 lg:px-20'>
-                        {/* Create Meeting */}
+
                         <div className='w-full items-center justify-center'>
 
                             <div className='w-full md:w-[90%] lg:w-[80%] xl:w-[70%]'>
@@ -112,7 +112,6 @@ const CreateMeet = () => {
 
                             <div className='w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-4'>
 
-                                {/* Create Meeting */}
                                 <button
                                     onClick={handleCreateMeet}
                                     className="w-[200px] text-xs bg-blue-900 hover:bg-blue-800 text-white px-4 py-3 rounded-4xl shadow-lg font-medium flex items-center my-5 gap-2"
@@ -120,7 +119,6 @@ const CreateMeet = () => {
                                     <MdPhotoCameraFront size={20} /> New Meeting
                                 </button>
 
-                                {/* Join meeting */}
                                 <form onSubmit={handleJoinSubmit} className="w-full sm:w-[80%] rounded-2xl flex">
 
                                     <div className='w-full rounded-xl outline-1 outline-gray-500 hover:outline-2 hover:outline-blue-800 hover:text-blue-800 flex items-center px-4 py-3 gap-2'>
@@ -145,7 +143,6 @@ const CreateMeet = () => {
 
                         </div>
 
-                        {/* Carousel */}
                         <div>
                             <Swiper
                                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
