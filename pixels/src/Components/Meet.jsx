@@ -70,7 +70,7 @@ const Meet = () => {
             {/* <div className="w-full h-screen flex items-center justify-center">
                 <div className="size-full shadow-lg" ref={meetingRef}></div>
             </div> */}
-            <div className="w-full h-full max-w-[960px] mx-auto" ref={meetingRef}></div>
+            <div ref={meetingRef} style={{ width: '100vw', height: '100vh' }}></div>
         </div>
 
     );
